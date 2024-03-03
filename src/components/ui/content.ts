@@ -4,7 +4,7 @@ export const defaultEditorContent = {
     {
       type: "heading",
       attrs: { level: 2 },
-      content: [{ type: "text", text: "Introducing Novel" }],
+      content: [{ type: "text", text: "Introducing Novel + Tldraw " }],
     },
     {
       type: "paragraph",
@@ -15,12 +15,14 @@ export const defaultEditorContent = {
             {
               type: "link",
               attrs: {
-                href: "https://github.com/steven-tey/novel",
+                href: "https://github.com/naymurdev/note",
                 target: "_blank",
+                class:
+                  "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
               },
             },
           ],
-          text: "Novel",
+          text: "Novel V2.0",
         },
         {
           type: "text",
@@ -34,6 +36,8 @@ export const defaultEditorContent = {
               attrs: {
                 href: "https://tiptap.dev/",
                 target: "_blank",
+                class:
+                  "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
               },
             },
           ],
@@ -48,10 +52,29 @@ export const defaultEditorContent = {
               attrs: {
                 href: "https://sdk.vercel.ai/docs",
                 target: "_blank",
+                class:
+                  "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
               },
             },
           ],
           text: "Vercel AI SDK",
+        },
+        { type: "text", text: " + " },
+
+        {
+          type: "text",
+          marks: [
+            {
+              type: "link",
+              attrs: {
+                href: "https://tldraw.dev/",
+                target: "_blank",
+                class:
+                  "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
+              },
+            },
+          ],
+          text: "Tldraw",
         },
         { type: "text", text: "." },
       ],
@@ -64,22 +87,7 @@ export const defaultEditorContent = {
     {
       type: "codeBlock",
       attrs: { language: null },
-      content: [{ type: "text", text: "npm i novel" }],
-    },
-    {
-      type: "heading",
-      attrs: { level: 3 },
-      content: [{ type: "text", text: "Usage" }],
-    },
-    {
-      type: "codeBlock",
-      attrs: { language: null },
-      content: [
-        {
-          type: "text",
-          text: 'import { Editor } from "novel";\n\nexport default function App() {\n  return (\n     <Editor />\n  )\n}',
-        },
-      ],
+      content: [{ type: "text", text: "pnpm i " }],
     },
     {
       type: "heading",
@@ -134,7 +142,7 @@ export const defaultEditorContent = {
     {
       type: "image",
       attrs: {
-        src: "https://public.blob.vercel-storage.com/pJrjXbdONOnAeZAZ/banner-2wQk82qTwyVgvlhTW21GIkWgqPGD2C.png",
+        src: "https://res.cloudinary.com/dzl9yxixg/image/upload/v1709381670/linkedin_cover_1_utdbif.jpg",
         alt: "banner.png",
         title: "banner.png",
         width: null,
@@ -164,8 +172,10 @@ export const defaultEditorContent = {
                     {
                       type: "link",
                       attrs: {
-                        href: "https://github.com/steven-tey/novel",
+                        href: "https://github.com/naymurdev/note",
                         target: "_blank",
+                        class:
+                          "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
                       },
                     },
                   ],
@@ -182,19 +192,21 @@ export const defaultEditorContent = {
             {
               type: "paragraph",
               content: [
-                { type: "text", text: "Install the " },
+                { type: "text", text: "Follow Me In  " },
                 {
                   type: "text",
                   marks: [
                     {
                       type: "link",
                       attrs: {
-                        href: "https://www.npmjs.com/package/novel",
+                        href: "https://www.linkedin.com/in/naymur-rahman",
                         target: "_blank",
+                        class:
+                          "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
                       },
                     },
                   ],
-                  text: "NPM package",
+                  text: "Linkedin",
                 },
               ],
             },
@@ -207,20 +219,22 @@ export const defaultEditorContent = {
             {
               type: "paragraph",
               content: [
+                { type: "text", text: "Follow Me In " },
                 {
                   type: "text",
                   marks: [
                     {
                       type: "link",
                       attrs: {
-                        href: "https://vercel.com/templates/next.js/novel",
+                        href: "https://twitter.com/naymur_dev",
                         target: "_blank",
+                        class:
+                          "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
                       },
                     },
                   ],
-                  text: "Deploy your own",
+                  text: "Twitter",
                 },
-                { type: "text", text: " to Vercel" },
               ],
             },
           ],
