@@ -172,7 +172,7 @@ export const defaultEditorContent = {
                     {
                       type: "link",
                       attrs: {
-                        href: "https://github.com/naymurdev/note",
+                        href: "https://github.com/naymurdev/next-check",
                         target: "_blank",
                         class:
                           "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",

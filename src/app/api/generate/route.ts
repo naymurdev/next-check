@@ -56,9 +56,9 @@ export async function POST(req: Request): Promise<Response> {
       {
         role: "system",
         content:
-          "You are an AI writing assistant that continues existing text based on context from prior text. ",
-        // "Give more weight/priority to the later characters than the beginning ones. " +
-        // "Limit your response to no more than 200 characters, but make sure to construct complete sentences.",
+          "You are an AI writing assistant that continues existing text based on context from prior text. " +
+          // "Give more weight/priority to the later characters than the beginning ones. " +
+          "Limit your response to no more than 200 characters, but make sure to construct complete sentences.",
         // we're disabling markdown for now until we can figure out a way to stream markdown text with proper formatting: https://github.com/steven-tey/novel/discussions/7
         // "Use Markdown formatting when appropriate.",
       },
@@ -74,6 +74,8 @@ export async function POST(req: Request): Promise<Response> {
     stream: true,
     n: 1,
   });
+
+  console.log(response, prompt);
 
   // Convert the response into a friendly text-stream
   const stream = OpenAIStream(response);
