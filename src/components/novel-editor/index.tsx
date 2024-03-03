@@ -8,7 +8,11 @@ import { defaultEditorContent } from "../ui/content";
 export default function NovelEditor() {
   const [content, setContent] = useState<string>();
   console.log(content);
-
+  // const handleOnUpdate = (editor: TipTapEditor) => {
+  //   editor.getHTML();
+  //   editor.getJSON();
+  //   editor.getText();
+  // };
   return (
     <div className="relative w-full h-full">
       <ScrollArea className="h-screen rounded-md border p-4">
