@@ -17,7 +17,7 @@ export default function NovelEditor() {
   // };
   return (
     <div
-      className={`relative w-full h-full  ${
+      className={`relative w-full h-full border-r dark:border-[#020817]  ${
         layoutValue === "both"
           ? "col-span-4 grid"
           : layoutValue === "note"
