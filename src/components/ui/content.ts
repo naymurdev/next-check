@@ -4,80 +4,7 @@ export const defaultEditorContent = {
     {
       type: "heading",
       attrs: { level: 2 },
-      content: [{ type: "text", text: "Introducing Novel + Tldraw " }],
-    },
-    {
-      type: "paragraph",
-      content: [
-        {
-          type: "text",
-          marks: [
-            {
-              type: "link",
-              attrs: {
-                href: "https://github.com/naymurdev/note",
-                target: "_blank",
-                class:
-                  "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-              },
-            },
-          ],
-          text: "Novel V2.0",
-        },
-        {
-          type: "text",
-          text: " is a Notion-style WYSIWYG editor with AI-powered autocompletion. Built with ",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "link",
-              attrs: {
-                href: "https://tiptap.dev/",
-                target: "_blank",
-                class:
-                  "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-              },
-            },
-          ],
-          text: "Tiptap",
-        },
-        { type: "text", text: " + " },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "link",
-              attrs: {
-                href: "https://sdk.vercel.ai/docs",
-                target: "_blank",
-                class:
-                  "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-              },
-            },
-          ],
-          text: "Vercel AI SDK",
-        },
-        { type: "text", text: " + " },
-
-        {
-          type: "text",
-          marks: [
-            {
-              type: "link",
-              attrs: {
-                href: "https://tldraw.dev/",
-                target: "_blank",
-                class:
-                  "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-              },
-            },
-          ],
-          text: "Tldraw",
-        },
-        { type: "text", text: "." },
-      ],
+      content: [{ type: "text", text: "JavaScript Async Function " }],
     },
     {
       type: "heading",
@@ -85,10 +12,15 @@ export const defaultEditorContent = {
       content: [{ type: "text", text: "Installation" }],
     },
     {
-      type: "codeBlock",
-      attrs: { language: null },
-      content: [{ type: "text", text: "pnpm i " }],
+      type: "paragraph",
+      content: [
+        {
+          type: "text",
+          text: "JavaScript async functions provide a way to work with asynchronous code more conveniently and with less syntactic noise compared to traditional approaches like callbacks or Promises. Async functions are a special kind of function that can be declared with the async keyword before the function declaration",
+        },
+      ],
     },
+
     {
       type: "heading",
       attrs: { level: 3 },
@@ -103,7 +35,7 @@ export const defaultEditorContent = {
           content: [
             {
               type: "paragraph",
-              content: [{ type: "text", text: "Slash menu & bubble menu" }],
+              content: [{ type: "text", text: "Simplicity and Readability" }],
             },
           ],
         },
@@ -113,11 +45,10 @@ export const defaultEditorContent = {
             {
               type: "paragraph",
               content: [
-                { type: "text", text: "AI autocomplete (type " },
-                { type: "text", marks: [{ type: "code" }], text: "++" },
+                { type: "text", text: "Error Handling " },
                 {
                   type: "text",
-                  text: " to activate, or select from slash menu)",
+                  text: "with try/catch",
                 },
               ],
             },
@@ -131,109 +62,7 @@ export const defaultEditorContent = {
               content: [
                 {
                   type: "text",
-                  text: "Image uploads (drag & drop / copy & paste, or select from slash menu) ",
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      type: "image",
-      attrs: {
-        src: "https://res.cloudinary.com/dzl9yxixg/image/upload/v1709381670/linkedin_cover_1_utdbif.jpg",
-        alt: "banner.png",
-        title: "banner.png",
-        width: null,
-        height: null,
-      },
-    },
-    { type: "horizontalRule" },
-    {
-      type: "heading",
-      attrs: { level: 3 },
-      content: [{ type: "text", text: "Learn more" }],
-    },
-    {
-      type: "taskList",
-      content: [
-        {
-          type: "taskItem",
-          attrs: { checked: false },
-          content: [
-            {
-              type: "paragraph",
-              content: [
-                { type: "text", text: "Star us on " },
-                {
-                  type: "text",
-                  marks: [
-                    {
-                      type: "link",
-                      attrs: {
-                        href: "https://github.com/naymurdev/next-check",
-                        target: "_blank",
-                        class:
-                          "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-                      },
-                    },
-                  ],
-                  text: "GitHub",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: "taskItem",
-          attrs: { checked: false },
-          content: [
-            {
-              type: "paragraph",
-              content: [
-                { type: "text", text: "Follow Me In  " },
-                {
-                  type: "text",
-                  marks: [
-                    {
-                      type: "link",
-                      attrs: {
-                        href: "https://www.linkedin.com/in/naymur-rahman",
-                        target: "_blank",
-                        class:
-                          "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-                      },
-                    },
-                  ],
-                  text: "Linkedin",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: "taskItem",
-          attrs: { checked: false },
-          content: [
-            {
-              type: "paragraph",
-              content: [
-                { type: "text", text: "Follow Me In " },
-                {
-                  type: "text",
-                  marks: [
-                    {
-                      type: "link",
-                      attrs: {
-                        href: "https://twitter.com/naymur_dev",
-                        target: "_blank",
-                        class:
-                          "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-                      },
-                    },
-                  ],
-                  text: "Twitter",
+                  text: "Sequential Execution with await:",
                 },
               ],
             },

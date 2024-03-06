@@ -1,7 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-toggle-light: rgb(255, 145, 0);
+  --color-toggle-dark: rgb(255, 255, 255);
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -76,4 +84,12 @@
   .ProseMirror {
     @apply p-12 px-8 sm:px-12;
   }
-} */
+}
+
+@media (min-width: 640px) {
+  .ProseMirror {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding: 1.5em !important;
+  }
+}
